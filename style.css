@@ -1,0 +1,288 @@
+/* ===========================
+   ZYLP GROUP CERTIFICATE PORTAL
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#081c3b,#103d72,#1b5fae);
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:40px 20px;
+}
+
+.container{
+    width:100%;
+    max-width:900px;
+}
+
+.logo-area{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.logo{
+    width:90px;
+    height:90px;
+    object-fit:contain;
+    margin-bottom:10px;
+}
+
+.logo-area h1{
+    color:#fff;
+    font-size:36px;
+    font-weight:700;
+}
+
+.logo-area p{
+    color:#d9e8ff;
+    margin-top:5px;
+    font-size:18px;
+}
+
+.form-card{
+    background:rgba(255,255,255,.12);
+    backdrop-filter:blur(20px);
+    border:1px solid rgba(255,255,255,.2);
+    border-radius:20px;
+    padding:35px;
+    box-shadow:0 15px 35px rgba(0,0,0,.35);
+}
+
+.form-card h2{
+    color:#fff;
+    margin-bottom:25px;
+    text-align:center;
+}
+
+.input-box{
+    margin-bottom:20px;
+}
+
+.input-box label{
+    display:block;
+    color:#fff;
+    margin-bottom:8px;
+    font-weight:500;
+}
+
+.input-box input,
+.input-box select{
+    width:100%;
+    padding:15px;
+    border:none;
+    border-radius:12px;
+    outline:none;
+    font-size:16px;
+}
+
+.checkbox{
+    display:flex;
+    align-items:flex-start;
+    gap:10px;
+    color:#fff;
+    margin-bottom:25px;
+}
+
+.generateBtn{
+    width:100%;
+    padding:16px;
+    border:none;
+    border-radius:12px;
+    background:#ffd24d;
+    color:#000;
+    font-size:18px;
+    font-weight:700;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.generateBtn:hover{
+    transform:translateY(-3px);
+    background:#ffbe00;
+}
+
+/* ===================
+CERTIFICATE
+=================== */
+
+.certificate{
+    margin-top:40px;
+}
+
+.certificate-border{
+    background:#fff;
+    border:12px solid #123d7a;
+    border-radius:15px;
+    padding:45px;
+    color:#222;
+}
+
+.certificate-header{
+    text-align:center;
+}
+
+.certificate-logo{
+    width:85px;
+    margin-bottom:10px;
+}
+
+.certificate-header h1{
+    color:#123d7a;
+    font-size:34px;
+}
+
+.certificate-header h2{
+    color:#d69b00;
+    margin-top:5px;
+    margin-bottom:15px;
+    letter-spacing:2px;
+}
+
+.certificate-header p{
+    color:#666;
+}
+
+#certificateName{
+    text-align:center;
+    margin:35px 0;
+    font-size:34px;
+    color:#123d7a;
+    border-bottom:2px dashed #bbb;
+    display:inline-block;
+    width:100%;
+    padding-bottom:12px;
+}
+
+.details{
+    margin-top:25px;
+}
+
+.details p{
+    font-size:18px;
+    margin:14px 0;
+}
+
+.signature-area{
+    display:flex;
+    justify-content:flex-end;
+    margin-top:55px;
+}
+
+.signature-area hr{
+    width:220px;
+    border:1px solid #000;
+    margin-bottom:8px;
+}
+
+.signature-area p{
+    text-align:center;
+}
+
+.signature-area h4{
+    text-align:center;
+    color:#123d7a;
+    margin-top:5px;
+}
+
+.footer-text{
+    text-align:center;
+    margin-top:45px;
+    color:#555;
+    line-height:1.7;
+}
+
+.buttons{
+    margin-top:35px;
+    display:flex;
+    justify-content:center;
+    gap:20px;
+}
+
+.buttons button{
+    padding:15px 30px;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:16px;
+    font-weight:600;
+    transition:.3s;
+}
+
+#downloadBtn{
+    background:#123d7a;
+    color:#fff;
+}
+
+.buttons button:last-child{
+    background:#ffd24d;
+}
+
+.buttons button:hover{
+    transform:translateY(-3px);
+}
+
+@media(max-width:768px){
+
+.logo-area h1{
+    font-size:28px;
+}
+
+.form-card{
+    padding:22px;
+}
+
+.certificate-border{
+    padding:25px;
+}
+
+#certificateName{
+    font-size:26px;
+}
+
+.details p{
+    font-size:16px;
+}
+
+.buttons{
+    flex-direction:column;
+}
+
+.buttons button{
+    width:100%;
+}
+
+.signature-area{
+    justify-content:center;
+}
+}
+
+@media print{
+
+body{
+    background:#fff;
+}
+
+.form-card,
+.logo-area,
+.buttons{
+    display:none;
+}
+
+.certificate{
+    display:block !important;
+    margin:0;
+}
+
+.certificate-border{
+    border:8px solid #123d7a;
+    box-shadow:none;
+}
+}
