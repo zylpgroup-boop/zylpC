@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZYLP Group | Verified Certificate Portal</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="background"></div>
+
+<div class="container">
+
+<header>
+
+<div class="logo-area">
+
+<img src="logo.png" class="logo">
+
+<h1>ZYLP GROUP</h1>
+
+<p>Verified Certificate Portal</p>
+
+</div>
+
+</header>
+
+<div class="form-card">
+
+<h2>Certificate Application</h2>
+
+<form id="certificateForm">
+
+<div class="input-box">
+
+<label>Full Name</label>
+
+<input
+type="text"
+id="name"
+placeholder="Enter your full name"
+required>
+
+</div>
+
+
+<div class="input-box">
+
+<label>Email Address</label>
+
+<input
+type="email"
+id="email"
+placeholder="example@gmail.com"
+required>
+
+</div>
+
+
+
+<div class="input-box">
+
+<label>Profession</label>
+
+<select id="profession">
+
+<option value="">Select Profession</option>
+
+<option>Student</option>
+
+<option>Creator</option>
+
+<option>Artist</option>
+
+<option>Worker</option>
+
+<option>Freelancer</option>
+
+<option>Business Owner</option>
+
+<option>Developer</option>
+
+<option>Designer</option>
+
+<option value="Other">Other</option>
+
+</select>
+
+</div>
+
+
+
+<div
+class="input-box"
+id="otherProfessionBox"
+style="display:none;">
+
+<label>Enter Your Profession</label>
+
+<input
+type="text"
+id="otherProfession"
+placeholder="Write here">
+
+</div>
+
+
+
+<div class="input-box">
+
+<label>Application Year</label>
+
+<select id="year">
+
+<option>2026</option>
+
+<option>2027</option>
+
+<option>2028</option>
+
+</select>
+
+</div>
+
+
+
+<div class="checkbox">
+
+<input
+type="checkbox"
+required>
+
+<span>
+
+I confirm that all information provided is correct.
+
+</span>
+
+</div>
+
+
+
+<button
+type="submit"
+class="generateBtn">
+
+Generate Certificate
+
+</button>
+
+</form>
+
+</div>
+
+<!-- Certificate -->
+
+<div
+class="certificate"
+id="certificate"
+style="display:none;">
+
+<div class="certificate-border">
+
+<div class="certificate-header">
+
+<img
+src="logo.png"
+class="certificate-logo">
+
+<h1>ZYLP GROUP</h1>
+
+<h2>VERIFIED CERTIFICATE</h2>
+
+<p>
+This certificate is proudly presented to
+</p>
+
+</div>
+
+<h3 id="certificateName">
+
+Full Name
+
+</h3>
+
+<div class="details">
+
+<p>
+
+<strong>Profession :</strong>
+
+<span id="certificateProfession"></span>
+
+</p>
+
+<p>
+
+<strong>Email :</strong>
+
+<span id="certificateEmail"></span>
+
+</p>
+
+<p>
+
+<strong>Application Year :</strong>
+
+<span id="certificateYear"></span>
+
+</p>
+
+<p>
+
+<strong>Issue Date :</strong>
+
+<span id="issueDate"></span>
+
+</p>
+
+<p>
+
+<strong>Certificate ID :</strong>
+
+<span id="certificateID"></span>
+
+</p>
+
+<p>
+
+<strong>Verification Code :</strong>
+
+<span id="verificationCode"></span>
+
+</p>
+
+</div>
+
+<div class="signature-area">
+
+<div>
+
+<hr>
+
+<p>
+
+Founder & CEO
+
+</p>
+
+<h4>
+
+Deep Barik
+
+</h4>
+
+</div>
+
+</div>
+
+<div class="footer-text">
+
+This is a system generated certificate.
+
+<br>
+
+Verified by ZYLP Group.
+
+</div>
+
+<div class="buttons">
+
+<button id="downloadBtn">
+
+Download PDF
+
+</button>
+
+<button onclick="window.print()">
+
+Print
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+
+<script src="script.js"></script>
+
+</body>
+</html>
